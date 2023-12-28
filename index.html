@@ -1,0 +1,327 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>7li7li导航站</title>
+    <link href="static/32.png" rel="icon" sizes="32x32" />
+    <link href="static/192.png" rel="icon" sizes="192x192" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1" />
+    <style type="text/css">
+        p {text-indent:10px;word-spacing:5px;}
+        html{
+            height: 96%;
+        }
+		main {
+            height: 100%;
+        }
+        body {
+		    background-image: url(static/background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+			padding: 0;
+            margin: 0;
+            user-select: none;
+            font: lighter 16px "微软雅黑";
+        }
+
+            body:before {
+                content: '';
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                display: block;
+                position: fixed;
+                top: calc(50% - 1500px);
+                left: calc(50% - 1500px);
+            }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            margin: 0px auto;
+        }
+
+        .d1 {
+            width: 100%;
+            height: 100%;
+            margin: 0px auto;
+            background: url("img/midground.png");
+            z-index: 1;
+            -webkit-animation: da 100s linear infinite;
+            -moz-animation: da 100s linear infinite;
+            -o-animation: da 100s linear infinite;
+            animation: da 100s linear infinite;
+        }
+
+        .d2 {
+            width: 100%;
+            height: 100%;
+            margin: 0px auto;
+            background: url("img/foreground.png");
+            z-index: 2;
+            -webkit-animation: cc 153s linear infinite;
+            -o-animation: cc 153s linear infinite;
+            -moz-animation: cc 153s linear infinite;
+            animation: cc 153s linear infinite;
+        }
+
+        @keyframes bg-rotate {
+            0% {
+                transform: rotate(0)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+
+
+        @-webkit-keyframes cc {
+            from {
+                background-position: 0 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                background-position: 600% 0;
+            }
+        }
+
+        @-o-keyframes cc {
+            from {
+                background-position: 0 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                background-position: 600% 0;
+            }
+        }
+
+        @-moz-keyframes cc {
+            from {
+                background-position: 0 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                background-position: 600% 0;
+            }
+        }
+
+        @keyframes cc {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 600% 0;
+            }
+        }
+
+        @keyframes da {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 0 600%;
+            }
+        }
+
+        @-webkit-keyframes da {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 0 600%;
+            }
+        }
+
+        @-moz-keyframes da {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 0 600%;
+            }
+        }
+
+        @-ms-keyframes da {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 0 600%;
+            }
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        main {
+            display: table;
+            margin: 0 auto;
+        }
+
+        .content {
+            padding-top: 0px;
+            padding-bottom: 0px;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .logo {
+            padding-top: 10%;
+            margin-bottom: 50px;
+        }
+
+            .logo img {
+                height: auto;
+                max-width: 100px;
+                border-radius: 100%;
+                border: 3px solid #fff;
+                transition: transform 0.3s;
+            }
+
+                .logo img:hover {
+                    transform: scale(1.1, 1.1) rotate(1turn);
+                }
+
+        .links {
+            margin: auto;
+            text-align: center;
+            max-width: 150px;
+			padding-bottom: 100px;
+        }
+
+            .links a {
+                color: #fff;
+                display: block;
+                min-width: 80px;
+                padding: 1em 2em;
+                text-align: center;
+                margin-bottom: 1em;
+                border-radius: 100px;
+                border: #fff 1px solid;
+                transition: background 0.3s, color 0.3s, opacity 0.3s, transform 0.3s;
+            }
+
+                .links a:hover {
+                    color: #258ec5;
+                    background: #fff;
+                    transform: scale(1.1, 1.1);
+                }
+
+                .links a:active {
+                    opacity: 0.7;
+                    transform: scale(0.9, 0.9);
+                }
+
+                .links a:last-child {
+                    margin-bottom: 0;
+                }
+
+        footer {
+            left: 0;
+            right: 0;
+            bottom: 10px;
+            color: #fff;
+            position: fixed;
+            text-align: center;
+        }
+
+            footer a {
+                color: inherit;
+            }
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+			
+        }
+        a:hover {color:#dcdcdc;} 
+        audio {
+            z-index: 5;
+            position: absolute;
+			left:10;
+            bottom: 20;
+            opacity: 0.1;
+            -webkit-transition: all 2s;
+            -moz-transition: all 2s;
+            -o-transition: all 2s;
+            transition: all 2s;
+        }
+
+            audio:hover {
+                opacity: 1;
+            }
+    </style>
+</head>
+<body>
+    <audio controls autoplay>
+        <source src="music.mp3">
+    </audio>
+    <p>
+        <a href="https://chat.7li7li.cn" title="仅限受邀用户注册使用" target="_blank">聊天室</a>
+        <a href="https://music.7li7li.cn" title="无损音乐免费下" target="_blank">音乐服务</a>
+        <a href="https://qltool.7li7li.cn" title="每日赚红包京豆" target="_blank">京东任务</a>
+        <a href="https://link.7li7li.sbs/cloud/shared" title="密码:www.7li7li.cn" target="_blank">网盘分享</a>
+        <a href="https://download.7li7li.cn" title="密码:www.7li7li.cn" target="_blank">下载站</a>
+        <a href="https://wallpaper.7li7li.cn" title="精美电脑壁纸在线下载" target="_blank">壁纸</a>
+        <a href="https://git.7li7li.cn" title="分享站长开源项目" target="_blank">Git仓库</a>
+        <a href="https://github.7li7li.cn" title="GitHub镜像站，免魔法，但无法登录" target="_blank">GitHub</a>
+        <!-- <a href="https://pandora.7li7li.cn" title="需要ChatGPT帐号,不消化Token使用ChatGPT3.5模型" target="_blank">Pandora</a> -->
+        <!-- <a href="https://chatgpt.7li7li.cn" title="免魔法，需要使用自己的OpenApiKey，支持GPT4.0" target="_blank">ChatGPT</a> -->
+        <!--<a href="https://gpt.7li7li.cn" title="免费的ChatGPT镜像站，第三方提供支持" target="_blank">ChatGPT</a>
+        <a href="https://bing.7li7li.cn" title="免魔法，免帐号，小站提供免费支持" target="_blank">NewBing</a>-->
+        <!--<a href="https://google.7li7li.sbs" title="搜索结果由谷歌提供与本站无关" target="_blank">Google</a>-->
+    </p>
+    <main class="container">
+        <div class="content">
+            <div class="d1">
+                <div class="d2">
+                    <div class="logo">
+                        <img src="static/avatar.jpg" alt="7li7li导航站" />
+                    </div>
+                    <div class="links">
+			    		<a href="https://gpt.7li7li.cn" title="AI导航站，免费使用ChatGPT等AI" target="_blank">AI导航</a>
+						<a href="https://space.bilibili.com/517220487" title="欢迎关注我的B站频道" target="_blank">B站频道</a>
+                        <a href="http://blog.7li7li.cn" title="各种实用教程" target="_blank">我的博客</a>
+						<a href="https://funtabs.7li7li.cn" title="好用的网站一网打尽" target="_blank">网址大全</a>
+                        <!--<a href="https://git.7li7li.cn" title="分享站长开源项目" target="_blank">Git仓库</a>-->
+                        <!-- <a href="https://gpt.7li7li.cn" title="免费的ChatGPT镜像站，第三方提供支持" target="_blank">ChatGPT</a> -->
+                        <!-- <a href="https://bing.7li7li.cn" title="免魔法，免帐号" target="_blank">NewBing</a> -->
+                        <!-- <a href="https://claude.ai" title="另一款强大的AI，需要魔法" target="_blank">Claude</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- <form action="https://google.7li7li.sbs/search?q=" method="get" target="_blank"> -->
+
+            <!-- <input type="text" name="q" placeholder="Google" /> -->
+            <!-- <input type="submit" value="搜索" /> -->
+
+        <!-- </form> -->
+        <p>
+            <a href="https://beian.miit.gov.cn/" target="_blank">冀ICP备2023012147号-1</a>
+            <img src="static/beian.png" />
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010102006566" target="_blank">京公网安备 11010102006566号</a>
+            <a>©</a> 
+            <a>
+                <script>document.write(new Date().getFullYear())</script>
+                By
+            </a><a href="https://www.7li7li.cn" target="_blank">7li7li小破站</a>
+        </p>
+    </footer>
+</body>
+</html>
