@@ -1,0 +1,162 @@
+[
+  {
+    "name": "放空",
+    "artist": "A1 TRIP、大籽、Lil E",
+    "url": "./music/A1 TRIP、大籽、Lil E - 放空.mp3",
+    "cover": "./music/A1 TRIP、大籽、Lil E - 放空.jpg",
+    "lrc": "./music/A1 TRIP、大籽、Lil E - 放空.lrc",
+    "theme": "#171513"
+  },
+  {
+    "name": "幻昼",
+    "artist": "DJ朵儿",
+    "url": "./music/DJ朵儿 - 幻昼.mp3",
+    "cover": "./music/DJ朵儿 - 幻昼.jpg",
+    "lrc": "./music/DJ朵儿 - 幻昼.lrc",
+    "theme": "#171513"
+  },
+  {
+    "name": "我的纸飞机",
+    "artist": "GooGoo、王之睿",
+    "url": "./music/GooGoo、王之睿 - 我的纸飞机.mp3",
+    "cover": "./music/GooGoo、王之睿 - 我的纸飞机.jpg",
+    "lrc": "./music/GooGoo、王之睿 - 我的纸飞机.lrc",
+    "theme": "#171513"
+  },
+  {
+    "name": "山茶花读不懂白玫瑰",
+    "artist": "Lil笑笑",
+    "url": "./music/Lil笑笑 - 山茶花读不懂白玫瑰.mp3",
+    "cover": "./music/Lil笑笑 - 山茶花读不懂白玫瑰.jpg",
+    "lrc": "./music/Lil笑笑 - 山茶花读不懂白玫瑰.lrc",
+    "theme": "#171513"
+  },
+  {
+    "name": "化风行万里",
+    "artist": "云朵",
+    "url": "./music/云朵 - 化风行万里.mp3",
+    "cover": "./music/云朵 - 化风行万里.jpg",
+    "lrc": "./music/云朵 - 化风行万里.lrc",
+    "theme": "#171513"
+  },
+  {
+    "name": "Mojito",
+    "artist": "周杰伦",
+    "url": "./music/周杰伦 - Mojito.mp3",
+    "cover": "./music/周杰伦 - Mojito.jpg",
+    "lrc": "./music/周杰伦 - Mojito.lrc",
+    "theme": "#171513"
+  },
+  {
+    "name": "最伟大的作品",
+    "artist": "周杰伦",
+    "url": "./music/周杰伦 - 最伟大的作品.mp3",
+    "cover": "./music/周杰伦 - 最伟大的作品.jpg",
+    "lrc": "./music/周杰伦 - 最伟大的作品.lrc",
+    "theme": "#171513"
+  },
+  {
+    "name": "等你下课 (with 杨瑞代)",
+    "artist": "周杰伦",
+    "url": "./music/周杰伦 - 等你下课 (with 杨瑞代).mp3",
+    "cover": "./music/周杰伦 - 等你下课 (with 杨瑞代).jpg",
+    "lrc": "./music/周杰伦 - 等你下课 (with 杨瑞代).lrc",
+    "theme": "#171513"
+  },
+  {
+    "name": "离别开出花",
+    "artist": "就是南方凯",
+    "url": "./music/就是南方凯 - 离别开出花.mp3",
+    "cover": "./music/就是南方凯 - 离别开出花.jpg",
+    "lrc": "./music/就是南方凯 - 离别开出花.lrc",
+    "theme": "#171513"
+  },
+  {
+    "name": "羡慕风羡慕雨",
+    "artist": "怪阿姨",
+    "url": "./music/怪阿姨 - 羡慕风羡慕雨.mp3",
+    "cover": "./music/怪阿姨 - 羡慕风羡慕雨.jpg",
+    "lrc": "./music/怪阿姨 - 羡慕风羡慕雨.lrc",
+    "theme": "#171513"
+  },
+  {
+    "name": "西楼儿女",
+    "artist": "月芽",
+    "url": "./music/月芽 - 西楼儿女.mp3",
+    "cover": "./music/月芽 - 西楼儿女.jpg",
+    "lrc": "./music/月芽 - 西楼儿女.lrc",
+    "theme": "#171513"
+  },
+  {
+    "name": "是你",
+    "artist": "梦然",
+    "url": "./music/梦然 - 是你.mp3",
+    "cover": "./music/梦然 - 是你.jpg",
+    "lrc": "./music/梦然 - 是你.lrc",
+    "theme": "#171513"
+  },
+  {
+    "name": "年少的你啊",
+    "artist": "浩然H.R",
+    "url": "./music/浩然H.R - 年少的你啊.mp3",
+    "cover": "./music/浩然H.R - 年少的你啊.jpg",
+    "lrc": "./music/浩然H.R - 年少的你啊.lrc",
+    "theme": "#171513"
+  },
+  {
+    "name": "想某人 (DJ舞曲版)",
+    "artist": "王优秀",
+    "url": "./music/王优秀 - 想某人 (DJ舞曲版).mp3",
+    "cover": "./music/王优秀 - 想某人 (DJ舞曲版).jpg",
+    "lrc": "./music/王优秀 - 想某人 (DJ舞曲版).lrc",
+    "theme": "#171513"
+  },
+  {
+    "name": "爱你",
+    "artist": "王心凌",
+    "url": "./music/王心凌 - 爱你.mp3",
+    "cover": "./music/王心凌 - 爱你.jpg",
+    "lrc": "./music/王心凌 - 爱你.lrc",
+    "theme": "#171513"
+  },
+  {
+    "name": "太想念(DJ阿卓版)",
+    "artist": "豆包",
+    "url": "./music/豆包 - 太想念(DJ阿卓版).mp3",
+    "cover": "./music/豆包 - 太想念(DJ阿卓版).jpg",
+    "lrc": "./music/豆包 - 太想念(DJ阿卓版).lrc",
+    "theme": "#171513"
+  },
+  {
+    "name": "暖一杯茶",
+    "artist": "邵帅",
+    "url": "./music/邵帅 - 暖一杯茶.mp3",
+    "cover": "./music/邵帅 - 暖一杯茶.jpg",
+    "lrc": "./music/邵帅 - 暖一杯茶.lrc",
+    "theme": "#171513"
+  },
+  {
+    "name": "一笑江湖(DJ弹鼓版)",
+    "artist": "闻人听書_",
+    "url": "./music/闻人听書_ - 一笑江湖(DJ弹鼓版).mp3",
+    "cover": "./music/闻人听書_ - 一笑江湖(DJ弹鼓版).jpg",
+    "lrc": "./music/闻人听書_ - 一笑江湖(DJ弹鼓版).lrc",
+    "theme": "#171513"
+  },
+  {
+    "name": "秒针(Dj版)",
+    "artist": "阿梨粤、R7",
+    "url": "./music/阿梨粤、R7 - 秒针(Dj版).mp3",
+    "cover": "./music/阿梨粤、R7 - 秒针(Dj版).jpg",
+    "lrc": "./music/阿梨粤、R7 - 秒针(Dj版).lrc",
+    "theme": "#171513"
+  },
+  {
+    "name": "热爱105℃的你",
+    "artist": "阿肆",
+    "url": "./music/阿肆 - 热爱105℃的你.mp3",
+    "cover": "./music/阿肆 - 热爱105℃的你.jpg",
+    "lrc": "./music/阿肆 - 热爱105℃的你.lrc",
+    "theme": "#171513"
+  }
+]
