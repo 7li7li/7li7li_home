@@ -196,7 +196,7 @@
 .icon-uniE005:before {
     content: "\e005";
 }
-/*AI*/
+/*ChatGPT*/
 .icon-uniE006:before {
     content: "\e006";
 }
@@ -219,4 +219,16 @@
 /*爱发电*/
 .icon-uniE011:before {
     content: "\e011";
+}
+/*红包*/
+.icon-uniE012:before {
+    content: "\e012";
+}
+/*AI机器人*/
+.icon-uniE013:before {
+    content: "\e013";
+}
+/*Gitee*/
+.icon-uniE014:before {
+    content: "\e014";
 }
