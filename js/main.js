@@ -165,6 +165,11 @@ $("#qq").mouseover(function () {
 }).mouseout(function () {
     $("#link-text").html("通过这里联系我");
 });
+$("#wx").mouseover(function () {
+    $("#link-text").html("添加站长微信");
+}).mouseout(function () {
+    $("#link-text").html("通过这里联系我");
+});
 $("#email").mouseover(function () {
     $("#link-text").html("Email:437672714@qq.com");
 }).mouseout(function () {
@@ -192,7 +197,7 @@ $('#switchmore').on('click', function () {
     } else {
         $('#container').attr('class', 'container');
         $("#change").html("7li&nbsp;7li&nbsp;");
-        $("#change1").html("一个建立于 21 世纪的小破站，存活于互联网的边缘");
+        $("#change1").html("一个用爱发电的小破站，存活于互联网的边缘");
     }
 });
 
@@ -241,7 +246,7 @@ window.addEventListener('load', function () {
             //移动端隐藏更多页面
             $('#container').attr('class', 'container');
             $("#change").html("7li&nbsp;7li&nbsp;!");
-            $("#change1").html("一个建立于 21 世纪的小破站，存活于互联网的边缘");
+            $("#change1").html("一个用爱发电的小破站，存活于互联网的边缘");
 
             //移动端隐藏弹窗页面
             $('#box').css("display", "none");

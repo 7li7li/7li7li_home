@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>添加QQ</title>
+	<link rel="stylesheet" href="style.css">
+	<script language="javascript" type="text/javascript">
+		function tiaozhuan(){
+			var ua = navigator.userAgent;
+			var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+				isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+				isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+				isMobile = isIphone || isAndroid;
+			if(isIphone){
+				location.href="mqq://card/show_pslcard?src_type=internal&version=1&uin=437672714&card_type=person&source=sharecard";
+			}else if(isAndroid){
+				location.href="mqq://card/show_pslcard?src_type=internal&version=1&uin=437672714&card_type=person&source=sharecard";
+			}else{
+				location.href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=437672714";
+			}
+		}
+	</script>
+</head>
+<body>
+    <div class="container">
+        <div class="user-form">
+            <div class="bg-user">
+                <!--<div class="top"><img src="images/dingtu.jpg"></div>-->
+                <div class="circle"><img src="images/touxiang.jpg"></div>
+                <p class="user-title"></p>
+                <p class="user-qq">QQ: 437672714</p>
+                <!--<div class="idcard"><img src="images/svip.png"></div>-->
+                <!--<div class="zan"><img src="images/zan.png"></div>-->
+                <p class="sign-text"><img src="images/person.jpeg">&nbsp;男&nbsp;|&nbsp;中国&nbsp;|&nbsp;北京&nbsp;</p>
+                <p class="sign-text"><img src="images/sign.jpeg"><a href="https://www.7li7li.cn">&nbsp7li7li、小破站</a></p>
+                <!--p class="sign-text"><img src="images/qzone.jpeg"><a href="https://mp.qzone.qq.com/u/437672714?uin=437672714&is_famous_space=0&brand_flag=0">&nbsp;Ta的空间</a></p-->
+                <!--<p class="sign-text"><img src="images/camera.jpeg">&nbsp;精选照片</p>-->
+				<p class="sign-text">&nbsp;手机扫码添加QQ，请注明来意</p>
+                <div class="border-img"><img src="images/ewm.jpg"></div>
+                <button class="btn-blue" onclick="tiaozhuan()">添加好友</button>
+				<button class="btn-blue2" onclick="window.open('https://wpa.qq.com/msgrd?v=3&uin=437672714&site=qq&menu=yes')">发消息</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
