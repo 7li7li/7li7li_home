@@ -161,7 +161,7 @@ $("#wool").mouseover(function () {
     $("#link-text").html("通过这里联系我");
 });
 $("#qq").mouseover(function () {
-    $("#link-text").html("QQ:437672714");
+    $("#link-text").html("QQ 437672714");
 }).mouseout(function () {
     $("#link-text").html("通过这里联系我");
 });
@@ -171,7 +171,7 @@ $("#wx").mouseover(function () {
     $("#link-text").html("通过这里联系我");
 });
 $("#email").mouseover(function () {
-    $("#link-text").html("Email:support@7li7li.cn");
+    $("#link-text").html("邮箱 support@7li7li.cn");
 }).mouseout(function () {
     $("#link-text").html("通过这里联系我");
 });
