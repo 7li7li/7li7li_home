@@ -171,7 +171,7 @@ $("#wx").mouseover(function () {
     $("#link-text").html("通过这里联系我");
 });
 $("#email").mouseover(function () {
-    $("#link-text").html("Email:437672714@qq.com");
+    $("#link-text").html("Email:support@7li7li.cn");
 }).mouseout(function () {
     $("#link-text").html("通过这里联系我");
 });
