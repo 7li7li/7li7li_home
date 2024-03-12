@@ -9,11 +9,13 @@
         body {
             font-family: Arial, sans-serif;
             background: url('https://cn.bing.com/th?id=OHR.CastleCoch_ZH-CN0917284602_1920x1080.jpg');
+            background-size: cover;
+            background-position: center; /* Add this line */
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             padding: 100px;
-            text-align: center; /* Add this line */
+            text-align: center; /* Add this line */            
         }
         
         .card {
@@ -22,9 +24,10 @@
             box-shadow: 0 0 20px rgba(0,0,0,0.15);
             border-radius: 10px;
             overflow: hidden;
-            transition: transform 0.3s;
-            width: calc(15% - 20px); /* Change this line */
-            margin: 10px; /* Reduced margin */
+            transition: transform 0.3s;            
+            width: calc(100% - 20px); /* Full width on mobile */
+            max-width: 300px; /* Set a max-width */
+            margin: 10px; /* Center the card */
             border: 1px solid #6f42c1;
         }
         
