@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://www.7li7li.cn/img/icon/favicon.png">
+    <title>打赏小站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://cn.bing.com/th?id=OHR.CastleCoch_ZH-CN0917284602_1920x1080.jpg');
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 100px;
+            text-align: center; /* Add this line */
+        }
+        
+        .card {
+            background: rgba(150, 150, 150, 0.5);
+            color: #fff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.15);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            width: calc(15% - 20px); /* Change this line */
+            margin: 10px; /* Reduced margin */
+            border: 1px solid #6f42c1;
+        }
+        
+        .card:hover {
+            transform: scale(1.05);
+            border-color: #fd7e14;
+        }
+        
+        .card img {
+            width: 200px;
+            height: 300px;
+            object-fit: contain;
+            border-radius: 0;
+            margin: 20px auto 0;
+            display: block;
+            /* animation: blink 1s infinite; */
+        }
+        
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
+        .card-content {
+            padding: 20px;
+        }
+        
+        .card-content h3 {
+            margin-top: 0;
+            color: #fd7e14;
+            animation: colorchange 1s infinite;
+        }
+        
+        .card-content p {
+            color: #ADD8E6;
+            text-align: center; /* Added this line */
+        }
+        
+        @keyframes colorchange {
+            0% { color: #fd7e14; }
+            50% { color: #6f42c1; }
+            100% { color: #fd7e14; }
+        }
+        .title {
+            width: 100%;
+            text-align: center;
+            color: #fd7e14;
+            margin-bottom: 20px;
+        }
+        
+        .subtitle {
+            width: 100%;
+            text-align: center;
+            color: #006400;
+            margin-bottom: 40px;
+            font-size: 1.2em;
+        }
+
+        /* footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color:rgba(150, 150, 150, 0.5);
+        color: black;
+        text-align: center;
+    } */
+    
+    /* footer a {
+        color: #007bff;
+        text-decoration: none;
+        font-size: 25px; 
+    }
+    
+    footer a:hover {
+        color: #0056b3;
+        text-decoration: underline;
+    } */
+    </style>
+</head>
+
+<body>
+    <!-- add the title and subtitle -->
+    <h1 class="title">打赏小站</h1>
+    <h2 class="subtitle">(你的支持是小站运营下去的动力)</h2>
+
+    <div class="card">
+        <img src="https://www.7li7li.cn/img/zfbhb.jpg" alt="VV佬 Avatar">
+        <div class="card-content">
+            <h3>红包</h3>
+            <p>扫个红包也是支持</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://www.7li7li.cn/img/zfbsk.jpg" alt="JB佬 Avatar">
+        <div class="card-content">
+            <h3>支付宝</h3>
+            <p>请作者喝冰阔落</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://www.7li7li.cn/img/vxsk.jpg" alt="fjiabinc Avatar">
+        <div class="card-content">
+            <h3>微信</h3>
+            <p>请作者喝娃哈哈</p>
+        </div>
+    </div>
+    <!-- <footer>
+        <a href="https://www.7li7li.cn" target="_blank">7li7li</a>
+    </footer> -->
+</body>
