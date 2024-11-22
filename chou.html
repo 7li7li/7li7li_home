@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抽奖程序</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .container {
+            width: 400px;
+            margin: 0 auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>抽奖设置</h2>
+        <label for="range">楼层范围 (例如: 1-100):</label><br>
+        <input type="text" id="range" value="1-100"><br><br>
+
+        <h2>奖品设置</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>奖品名称</th>
+                    <th>人数</th>
+                </tr>
+            </thead>
+            <tbody id="prizeTableBody">
+                <tr>
+                    <td><input type="text" value=""></td>
+                    <td><input type="number" value="" min="1"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="addPrize()">添加奖品</button>
+        <button onclick="startLottery()">开始抽奖</button>
+
+        <h2 id="result">抽奖结果</h2>
+        <div id="resultContent"></div>
+
+    </div>
+
+    <script>
+        function addPrize() {
+            let tableBody = document.getElementById('prizeTableBody');
+            let newRow = tableBody.insertRow(-1);
+            let cell1 = newRow.insertCell(0);
+            let cell2 = newRow.insertCell(1);
+            cell1.innerHTML = '<input type="text">';
+            cell2.innerHTML = '<input type="number" value="1" min="1">';
+        }
+
+        function startLottery() {
+            let rangeInput = document.getElementById('range').value;
+            let range = rangeInput.split('-').map(Number);
+            let minFloor = range[0];
+            let maxFloor = range[1];
+
+            let prizes = [];
+            let tableRows = document.getElementById('prizeTableBody').rows;
+            for (let i = 0; i < tableRows.length; i++) {
+                let prizeName = tableRows[i].cells[0].firstChild.value;
+                let prizeCount = parseInt(tableRows[i].cells[1].firstChild.value);
+                prizes.push({ name: prizeName, count: prizeCount });
+            }
+
+            let resultContent = document.getElementById('resultContent');
+            resultContent.innerHTML = "";
+
+            if (isNaN(minFloor) || isNaN(maxFloor) || minFloor > maxFloor) {
+                resultContent.innerHTML = "楼层范围输入错误！";
+                return;
+            }
+
+
+            let availableFloors = [];
+            for (let i = minFloor; i <= maxFloor; i++) {
+                availableFloors.push(i);
+            }
+
+            for (let prize of prizes) {
+                let winners = [];
+                for (let i = 0; i < prize.count; i++) {
+                    if (availableFloors.length === 0) {
+                        break;  // No more available floors
+                    }
+                    let randomIndex = Math.floor(Math.random() * availableFloors.length);
+                    let winnerFloor = availableFloors.splice(randomIndex, 1)[0];
+                    winners.push(winnerFloor);
+                }
+                resultContent.innerHTML += `${prize.name}: ${winners.join(', ')}楼<br>`;
+            }
+        }
+
+    </script>
+
+</body>
+</html>
