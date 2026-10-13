@@ -4,38 +4,103 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="xcLeigh 的个人主页" />
-    <title>xcLeigh · Personal Space</title>
+    <link rel="icon" href="assets/legacy/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/legacy/apple-touch-icon.png" />
+    <title>7li7li</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body data-theme="light">
     <div class="ambient ambient-one" aria-hidden="true"></div>
     <div class="ambient ambient-two" aria-hidden="true"></div>
-    <div class="petals" aria-hidden="true"><span>✦</span><span>✦</span><span>✦</span><span>✦</span></div>
+    <div class="petals" aria-hidden="true"><span><img src="assets/icons/spark.svg" alt=""></span><span><img src="assets/icons/spark.svg" alt=""></span><span><img src="assets/icons/spark.svg" alt=""></span><span><img src="assets/icons/spark.svg" alt=""></span></div>
     <div class="page-shell">
       <header class="topbar">
-        <a class="brand" href="#top" aria-label="回到首页"><span class="brand-mark">x</span><span class="brand-copy"><strong>xcLeigh</strong><small>PERSONAL SPACE</small></span></a>
-        <div class="top-actions"><button class="language-switch" type="button" aria-label="切换语言"><span class="lang-option is-active" data-lang="zh">中</span><span class="lang-option" data-lang="en">EN</span></button><button class="icon-button" id="theme-toggle" type="button" aria-label="切换深色模式" title="切换深色模式"><i data-lucide="moon"></i></button></div>
+        <a class="brand" href="#top" aria-label="回到首页"><img class="brand-mark" src="assets/legacy/icon.png" alt="7li7li.cn" /><span class="brand-copy"><strong>xcLeigh</strong><small>PERSONAL SPACE</small></span></a>
+        <div class="top-actions"><button class="language-switch" type="button" aria-label="切换语言"><span class="lang-option is-active" data-lang="zh">中</span><span class="lang-option" data-lang="en">EN</span></button><button class="icon-button" id="theme-toggle" type="button" aria-label="切换深色模式" title="切换深色模式"><img class="ui-icon" data-icon="moon" src="assets/icons/moon.svg" alt="" aria-hidden="true" /></button></div>
       </header>
       <main id="top" class="hero-layout">
         <section class="left-column" aria-labelledby="intro-title">
-          <div class="intro-row"><div class="avatar-wrap"><span class="avatar-halo"></span><img class="avatar" src="https://uj.uy/images/touxiang.webp" alt="xcLeigh 头像" /><span class="online-dot" title="目前在线"></span></div><div class="intro-content"><p class="profile-kicker">CREATIVE DEVELOPER · VISUAL STORYTELLER</p><h1 id="intro-title">Hello, I'm <span>xcLeigh</span></h1><p class="profile-copy" data-copy-zh="努力到无能为力，拼搏到感动自己！" data-copy-en="Making things with care, curiosity and a little bit of magic.">努力到无能为力，拼搏到感动自己！</p><nav class="social-links" aria-label="社交链接">
-            <a class="social-icon social-linuxdo" href="https://linux.do" target="_blank" rel="noreferrer" aria-label="LinuxDo"><span class="social-mark linuxdo-mark" aria-hidden="true"><svg viewBox="0 0 120 120" focusable="false"><defs><clipPath id="linuxdo-clip"><circle cx="60" cy="60" r="47"></circle></clipPath></defs><circle fill="#f0f0f0" cx="60" cy="60" r="50"></circle><rect fill="#1c1c1e" clip-path="url(#linuxdo-clip)" x="10" y="10" width="100" height="30"></rect><rect fill="#f0f0f0" clip-path="url(#linuxdo-clip)" x="10" y="40" width="100" height="40"></rect><rect fill="#ffb003" clip-path="url(#linuxdo-clip)" x="10" y="80" width="100" height="30"></rect></svg></span><span class="social-label">LinuxDo</span></a>
-            <a class="social-icon social-telegram" href="https://t.me" target="_blank" rel="noreferrer" aria-label="Telegram"><span class="social-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21.8 4.2 18.6 19c-.24 1.05-.86 1.3-1.75.8l-4.82-3.55-2.33 2.24c-.26.26-.48.48-.98.48l.35-4.9 8.92-8.05c.39-.35-.09-.55-.61-.2L6.36 12.95l-4.7-1.47c-1.02-.32-1.04-1.02.22-1.51L20.25 3.1c.84-.3 1.58.2 1.55 1.1Z"/></svg></span><span class="social-label">Telegram</span></a>
-            <a class="social-icon social-github" href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub"><span class="social-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 .6a11.4 11.4 0 0 0-3.61 22.21c.57.1.78-.25.78-.55v-2.16c-3.18.69-3.85-1.34-3.85-1.34-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.33.96.1-.74.4-1.25.73-1.54-2.54-.29-5.21-1.27-5.21-5.66 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.15 1.17A10.9 10.9 0 0 1 12 5.98c.97 0 1.94.13 2.85.38 2.18-1.48 3.14-1.17 3.14-1.17.62 1.57.23 2.73.11 3.02.74.8 1.18 1.82 1.18 3.07 0 4.4-2.68 5.36-5.23 5.65.41.36.78 1.07.78 2.16v3.2c0 .3.2.66.79.55A11.4 11.4 0 0 0 12 .6Z"/></svg></span><span class="social-label">GitHub</span></a>
-            <a class="social-icon social-mail" href="mailto:hello@example.com" aria-label="邮件"><span class="social-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.5 5.5h17v13h-17v-13Z"/><path d="m4 7 8 6 8-6"/></svg></span><span class="social-label">Email</span></a>
-            <a class="social-icon social-instagram" href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram"><span class="social-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.7" r="1"/></svg></span><span class="social-label">Instagram</span></a>
+          <div class="intro-row"><div class="avatar-wrap"><span class="avatar-halo"></span><img class="avatar" src="assets/legacy/logo.png" alt="7li7li.cn 头像" /><span class="online-dot" title="目前在线"></span></div><div class="intro-content"><p class="profile-kicker">CREATIVE DEVELOPER · VISUAL STORYTELLER</p><h1 id="intro-title" aria-label="7li7li.cn"><span class="title-black">7li7li</span><span class="title-red">.cn</span></h1><p class="profile-copy" data-copy-zh="永远相信美好的事情即将发生！" data-copy-en="Making things with care, curiosity and a little bit of magic.">永远相信美好的事情即将发生！</p><nav class="social-links" aria-label="社交链接">
+            <a class="social-icon social-qq legacy-social-icon" href="qq/index.html" target="_blank" rel="noreferrer" aria-label="QQ"><span class="social-mark legacy-glyph legacy-icon-qq" aria-hidden="true"></span><span class="social-label">QQ</span></a>
+            <a class="social-icon social-wechat legacy-social-icon" href="wx/index.html" target="_blank" rel="noreferrer" aria-label="微信"><span class="social-mark legacy-glyph legacy-icon-wechat" aria-hidden="true"></span><span class="social-label">微信</span></a>
+            <a class="social-icon social-mail legacy-social-icon" href="mailto:support@7li7li.cn" aria-label="邮箱"><span class="social-mark legacy-glyph legacy-icon-mail" aria-hidden="true"></span><span class="social-label">邮箱</span></a>
+            <a class="social-icon social-github" href="https://github.com/7li7li" target="_blank" rel="noreferrer" aria-label="GitHub"><span class="social-mark" aria-hidden="true"><img class="social-mark-image" src="assets/icons/github.svg" alt="" /></span><span class="social-label">GitHub</span></a>
+            <a class="social-icon social-bilibili legacy-social-icon" href="https://space.bilibili.com/517220487" target="_blank" rel="noreferrer" aria-label="bilibili"><span class="social-mark legacy-glyph legacy-icon-bilibili" aria-hidden="true"></span><span class="social-label">bilibili</span></a>
           </nav></div></div>
           
-          <section id="showcase" class="showcase-section website-nav-section" aria-labelledby="showcase-title"><div class="section-heading"><div><span class="heading-icon"><i data-lucide="compass"></i></span><h2 id="showcase-title">网站导航</h2></div><span class="view-all">左右滑动查看更多 <i data-lucide="arrow-right"></i></span></div><div class="site-nav-carousel"><button class="site-nav-arrow" id="site-nav-prev" type="button" aria-label="向左滚动"><i data-lucide="chevron-left"></i></button><div class="site-nav-viewport" id="site-nav-viewport" tabindex="0" role="region" aria-label="网站导航卡片，可横向滚动"><div class="site-nav-track"><a class="site-nav-card" href="https://uj.uy/" target="_blank" rel="noopener noreferrer"><div class="site-nav-image"><img src="https://uj.uy/images/thumbnails/heart-attack.webp" alt="个人主页预览" /></div><div class="site-nav-meta"><h3>个人主页</h3><p>查看我的个人空间</p><span>打开网站 <b>↗</b></span></div></a><a class="site-nav-card" href="https://github.com/" target="_blank" rel="noopener noreferrer"><div class="site-nav-image"><img src="https://uj.uy/images/thumbnails/pow.webp" alt="项目仓库预览" /></div><div class="site-nav-meta"><h3>项目仓库</h3><p>浏览代码与开源项目</p><span>打开网站 <b>↗</b></span></div></a><a class="site-nav-card" href="https://linux.do/" target="_blank" rel="noopener noreferrer"><div class="site-nav-image"><img src="https://uj.uy/images/thumbnails/love-in-space.webp" alt="社区页面预览" /></div><div class="site-nav-meta"><h3>社区交流</h3><p>加入社区讨论与分享</p><span>打开网站 <b>↗</b></span></div></a><a class="site-nav-card" href="https://t.me/" target="_blank" rel="noopener noreferrer"><div class="site-nav-image"><img src="https://uj.uy/images/thumbnails/qa.webp" alt="Telegram 页面预览" /></div><div class="site-nav-meta"><h3>Telegram</h3><p>获取最新消息与动态</p><span>打开网站 <b>↗</b></span></div></a><a class="site-nav-card" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><div class="site-nav-image"><img src="https://uj.uy/images/thumbnails/heart-attack.webp" alt="视频频道预览" /></div><div class="site-nav-meta"><h3>视频频道</h3><p>观看精选视频内容</p><span>打开网站 <b>↗</b></span></div></a></div></div><button class="site-nav-arrow" id="site-nav-next" type="button" aria-label="向右滚动"><i data-lucide="chevron-right"></i></button></div></section>
-        </section>
-        <section class="right-column" aria-label="网站导航区域"><section class="music-card glass-card" aria-label="音乐播放器"><div class="album-art"><img src="https://uj.uy/covers/Cherry_Bullet___Love_So_Sweet.jpg" alt="Love So Sweet 专辑封面" /></div><div class="track-info"><div class="track-heading"><strong>Love So Sweet</strong><span>Cherry Bullet</span></div><input id="progress-range" type="range" min="0" max="100" value="36" aria-label="播放进度" /><div class="time-row"><span id="current-time">0:00</span><span>3:08</span></div></div><button id="playlist-toggle" class="playlist-button" type="button" aria-label="打开播放列表"><i data-lucide="list-music"></i></button><div class="player-controls"><button class="skip-button" type="button" aria-label="上一首"><i data-lucide="skip-back"></i></button><button id="play-toggle" class="play-button" type="button" aria-label="播放"><i data-lucide="play"></i></button><button class="skip-button" type="button" aria-label="下一首"><i data-lucide="skip-forward"></i></button></div></section><div class="nav-stage" tabindex="0" role="region" aria-label="站点导航卡片，可使用方向键或拖拽切换"><a class="nav-card nav-card-left glass-card" data-card-index="0" href="https://uj.uy/" target="_blank" rel="noopener noreferrer"><div class="nav-photo"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&amp;fit=crop&amp;w=600&amp;q=85" alt="博客页面预览" /></div><div class="nav-card-copy"><h3>xcLeigh 主页</h3><span>xcLeigh</span><p>努力到无能为力，拼搏到感动自己！</p><em>我的博客</em></div></a><a class="nav-card nav-card-center glass-card" data-card-index="1" href="https://github.com/" target="_blank" rel="noopener noreferrer"><div class="nav-photo"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="文章页面预览" /></div><div class="nav-card-copy"><h3>xcLeigh 主页</h3><span>xcLeigh</span><p>努力到无能为力，拼搏到感动自己！</p><em>我的文章</em></div></a><a class="nav-card nav-card-right glass-card" data-card-index="2" href="https://linux.do/" target="_blank" rel="noopener noreferrer"><div class="nav-photo"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&amp;fit=crop&amp;w=600&amp;q=85" alt="资源页面预览" /></div><div class="nav-card-copy"><h3>xcLeigh 主页</h3><span>xcLeigh</span><p>努力到无能为力，拼搏到感动自己！</p><em>我的资源</em></div></a></div><div class="carousel-controls" aria-label="切换导航卡片"><button class="carousel-arrow" id="previous-card" type="button" aria-label="上一张"><i data-lucide="chevron-left"></i></button><div class="carousel-dots"><button class="carousel-dot" data-dot="0" type="button" aria-label="第一张"></button><button class="carousel-dot is-active" data-dot="1" type="button" aria-label="第二张"></button><button class="carousel-dot" data-dot="2" type="button" aria-label="第三张"></button></div><button class="carousel-arrow" id="next-card" type="button" aria-label="下一张"><i data-lucide="chevron-right"></i></button></div><section id="notes" class="quote-card"><span class="quote-mark">“</span><p>把每一次灵感都变成可以抵达的地方。</p><div class="quote-author"><span class="author-line"></span><span>xcLeigh · 2024</span></div></section></section>
-      </main>
-      <footer class="site-footer"><span>© 2024 xcLeigh</span><span>made with curiosity <i data-lucide="heart"></i></span></footer>
+          <section id="showcase" class="showcase-section website-nav-section" aria-labelledby="showcase-title">
+  <div class="section-heading">
+    <div><span class="heading-icon"><img class="ui-icon" data-icon="compass" src="assets/icons/compass.svg" alt="" aria-hidden="true" /></span><h2 id="showcase-title">我的网站</h2></div>
+  </div>
+  <div class="site-nav-carousel">
+    <button class="site-nav-arrow" id="site-nav-prev" type="button" aria-label="向左滚动"><img class="ui-icon" data-icon="chevron-left" src="assets/icons/chevron-left.svg" alt="" aria-hidden="true" /></button>
+    <div class="site-nav-viewport" id="site-nav-viewport" tabindex="0" role="region" aria-label="我的网站卡片，可横向滚动">
+      <div class="site-nav-track">
+        <a class="site-nav-card" href="https://ai.7li7li.cn/" target="_blank" rel="noopener noreferrer">
+          <div class="site-nav-image"><img src="https://uj.uy/images/thumbnails/love-in-space.webp" alt="7liAI 预览" /></div>
+          <div class="site-nav-meta"><h3>7liAI</h3><p>免费使用ChatGPT等模型</p><span>打开网站 <img class="ui-icon external-link-icon" src="assets/icons/external-link.svg" alt="" aria-hidden="true"></span></div>
+        </a>
+        <a class="site-nav-card" href="https://gpt.7li7li.cn/" target="_blank" rel="noopener noreferrer">
+          <div class="site-nav-image"><img src="https://uj.uy/images/thumbnails/heart-attack.webp" alt="AI导航预览" /></div>
+          <div class="site-nav-meta"><h3>AI导航</h3><p>集主流AI网站导航</p><span>打开网站 <img class="ui-icon external-link-icon" src="assets/icons/external-link.svg" alt="" aria-hidden="true"></span></div>
+        </a>
+        <a class="site-nav-card" href="https://nav.7li7li.cn/" target="_blank" rel="noopener noreferrer">
+          <div class="site-nav-image"><img src="https://uj.uy/images/thumbnails/pow.webp" alt="Web导航预览" /></div>
+          <div class="site-nav-meta"><h3>Web导航</h3><p>好用的网站一网打尽</p><span>打开网站 <img class="ui-icon external-link-icon" src="assets/icons/external-link.svg" alt="" aria-hidden="true"></span></div>
+        </a>
+        <a class="site-nav-card" href="wool/index.html" target="_blank" rel="noopener noreferrer">
+          <div class="site-nav-image"><img src="wool/img/bg.jpg" alt="省钱攻略网站预览" /></div>
+          <div class="site-nav-meta"><h3>查收省钱攻略</h3><p>享生活爱羊毛，发现实用优惠</p><span>打开网站 <img class="ui-icon external-link-icon" src="assets/icons/external-link.svg" alt="" aria-hidden="true"></span></div>
+        </a>
+      </div>
     </div>
+    <button class="site-nav-arrow" id="site-nav-next" type="button" aria-label="向右滚动"><img class="ui-icon" data-icon="chevron-right" src="assets/icons/chevron-right.svg" alt="" aria-hidden="true" /></button>
+  </div>
+</section>
+        </section>
+        <section class="right-column" aria-label="我的网站区域"><section class="music-card glass-card" aria-label="音乐播放器">
+          <div class="album-art"><img id="album-art" src="music/A1 TRIP、大籽、Lil E - 放空.jpg" alt="音乐封面" /></div>
+          <div class="track-info">
+            <div class="track-heading"><strong id="track-title">正在加载音乐…</strong><span id="track-artist">请稍候</span></div>
+            <input id="progress-range" type="range" min="0" max="100" value="0" step="0.1" aria-label="播放进度" />
+            <div class="time-row"><span id="current-time">0:00</span><span id="duration-time">0:00</span></div>
+          </div>
+          <div class="player-actions">
+            <button id="lyrics-toggle" class="lyrics-button" type="button" aria-label="打开歌词" aria-expanded="false"><img class="ui-icon" data-icon="lyrics" src="assets/icons/lyrics.svg" alt="" aria-hidden="true" /></button>
+            <button id="playlist-toggle" class="playlist-button" type="button" aria-label="打开播放列表" aria-expanded="false"><img class="ui-icon" data-icon="list-music" src="assets/icons/list-music.svg" alt="" aria-hidden="true" /></button>
+          </div>
+          <div class="player-controls">
+            <button id="previous-track" class="skip-button" type="button" aria-label="上一首"><img class="ui-icon" data-icon="skip-back" src="assets/icons/skip-back.svg" alt="" aria-hidden="true" /></button>
+            <button id="play-toggle" class="play-button" type="button" aria-label="播放"><img class="ui-icon" data-icon="play" src="assets/icons/play.svg" alt="" aria-hidden="true" /></button>
+            <button id="next-track" class="skip-button" type="button" aria-label="下一首"><img class="ui-icon" data-icon="skip-forward" src="assets/icons/skip-forward.svg" alt="" aria-hidden="true" /></button>
+          </div>
+          <div class="volume-control" aria-label="音量控制">
+            <button id="volume-toggle" class="volume-button" type="button" aria-label="静音"><img id="volume-icon" class="ui-icon" data-icon="volume-2" src="assets/icons/volume-2.svg" alt="" aria-hidden="true" /></button>
+            <input id="volume-range" class="volume-range" type="range" min="0" max="1" value="0.5" step="0.01" aria-label="音量" />
+          </div>
+          <audio id="audio-player" preload="metadata"></audio>
+          <div class="playlist-panel" id="playlist-panel" hidden>
+            <div class="playlist-heading"><strong>播放列表</strong><span id="playlist-count">加载中…</span></div>
+            <div id="playlist-items"></div>
+          </div>
+          <div class="lyrics-panel" id="lyrics-panel" hidden>
+            <div class="lyrics-heading"><strong>歌词</strong><span id="lyrics-status">加载中…</span></div>
+            <div class="lyrics-list" id="lyrics-list" role="list" aria-live="polite"></div>
+          </div>
+        </section><div class="nav-stage" tabindex="0" role="region" aria-label="站点导航卡片，可使用方向键或拖拽切换"><div class="nav-card nav-card-left glass-card" data-card-index="0"><div class="nav-photo"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&amp;fit=crop&amp;w=600&amp;q=85" alt="博客页面预览" /></div><div class="nav-card-copy"><h3>我的博客</h3><span>blog.7li7li.cn</span><p>记录生活、技术与创作</p><a class="nav-card-link" href="https://blog.7li7li.cn/" target="_blank" rel="noopener noreferrer">我的博客</a></div></div><div class="nav-card nav-card-center glass-card" data-card-index="1"><div class="nav-photo"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="简历页面预览" /></div><div class="nav-card-copy"><h3>我的简历</h3><span>resume.7li7li.cn</span><p>了解我的经历与技能</p><a class="nav-card-link" href="https://resume.7li7li.cn/" target="_blank" rel="noopener noreferrer">我的简历</a></div></div><div class="nav-card nav-card-right glass-card" data-card-index="2"><div class="nav-photo"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&amp;fit=crop&amp;w=600&amp;q=85" alt="AI 生图站预览" /></div><div class="nav-card-copy"><h3>AI生图站</h3><span>ikunstudio.com</span><p>探索 AI 图像创作</p><a class="nav-card-link" href="https://ikunstudio.com/" target="_blank" rel="noopener noreferrer">AI生图站</a></div></div></div><div class="carousel-controls" aria-label="切换导航卡片"><button class="carousel-arrow" id="previous-card" type="button" aria-label="上一张"><img class="ui-icon" data-icon="chevron-left" src="assets/icons/chevron-left.svg" alt="" aria-hidden="true" /></button><div class="carousel-dots"><button class="carousel-dot" data-dot="0" type="button" aria-label="第一张"></button><button class="carousel-dot is-active" data-dot="1" type="button" aria-label="第二张"></button><button class="carousel-dot" data-dot="2" type="button" aria-label="第三张"></button></div><button class="carousel-arrow" id="next-card" type="button" aria-label="下一张"><img class="ui-icon" data-icon="chevron-right" src="assets/icons/chevron-right.svg" alt="" aria-hidden="true" /></button></div></section>
+      </main>
+      <footer class="site-footer">
+        <div class="power">
+          <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">冀ICP备2023012147号-1</a>
+          <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010102006566" target="_blank" rel="noopener noreferrer"><img src="assets/icons/gov.png" alt="">京公网安备 11010102006566号</a>
+          <span><img class="ui-icon" data-icon="heart" src="assets/icons/heart.svg" alt="" aria-hidden="true" />7li7li&nbsp;©&nbsp;<script>document.write((new Date()).getFullYear())</script><noscript>2026</noscript></span>
+        </div>
+      </footer>
+    </div>
+    <script src="music_config.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
