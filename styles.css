@@ -335,7 +335,8 @@ body[data-theme=dark] .nav-card{background:rgba(35,37,60,.82);border-color:rgba(
 /* Split the name into the requested black and red parts. */
 .intro-content h1 .title-black{color:#171717}
 .intro-content h1 .title-red{color:#d62839}
-.intro-content h1{white-space:nowrap}
+.intro-content h1{display:inline-block;max-width:100%;white-space:nowrap;word-break:keep-all;overflow-wrap:normal}
+.intro-content h1 .title-black,.intro-content h1 .title-red{display:inline;white-space:nowrap}
 body[data-theme=dark] .intro-content h1 .title-black{color:#f6f3ff}
 
 /* Use the original site's logo asset for the brand icon. */
