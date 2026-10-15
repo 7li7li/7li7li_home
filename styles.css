@@ -77,7 +77,7 @@ body[data-theme=dark] .nav-card{background:rgba(35,37,60,.82);border-color:rgba(
 .social-linuxdo .social-label{font-size:12px!important;line-height:1!important;font-weight:700!important;}
 .social-qq:hover,.social-qq:focus-visible{flex-basis:78px!important;width:78px!important;padding:0 13px!important;}
 .social-wechat:hover,.social-wechat:focus-visible{flex-basis:82px!important;width:82px!important;padding:0 13px!important;}
-.social-bilibili:hover,.social-bilibili:focus-visible{flex-basis:112px!important;width:112px!important;padding:0 13px!important;}
+.social-bilibili:hover,.social-bilibili:focus-visible{flex-basis:94px!important;width:94px!important;padding:0 13px!important;}
 .social-mail:hover,.social-mail:focus-visible{flex-basis:82px!important;width:82px!important;padding:0 13px!important;}
 .right-column>.music-card{margin-top:0;}
 
@@ -94,7 +94,7 @@ body[data-theme=dark] .nav-card{background:rgba(35,37,60,.82);border-color:rgba(
 .site-nav-image img{width:100%;height:100%;object-fit:cover;transition:transform .28s ease;user-drag:none;-webkit-user-drag:none}
 .site-nav-card:hover .site-nav-image img,.site-nav-card:focus-visible .site-nav-image img{transform:scale(1.06)}
 .site-nav-meta{padding:13px 14px 15px}
-.site-nav-meta h3{margin:0 0 5px;font-family:"Playfair Display",Georgia,serif;font-size:17px}
+.site-nav-meta h3{margin:0 0 5px;font-family:"DM Sans",Arial,"Microsoft YaHei",sans-serif;font-variant-numeric:lining-nums;font-size:17px}
 .site-nav-meta p{margin:0;color:var(--muted);font-size:11px;line-height:1.45}
 .site-nav-meta span{display:inline-flex;align-items:center;gap:5px;margin-top:12px;color:var(--accent);font-size:10px;font-weight:700}
 .site-nav-meta .external-link-icon{width:14px;height:14px}
@@ -335,7 +335,8 @@ body[data-theme=dark] .nav-card{background:rgba(35,37,60,.82);border-color:rgba(
 /* Split the name into the requested black and red parts. */
 .intro-content h1 .title-black{color:#171717}
 .intro-content h1 .title-red{color:#d62839}
-.intro-content h1{display:inline-block;max-width:100%;white-space:nowrap;word-break:keep-all;overflow-wrap:normal}
+/* Use lining numerals and a consistent baseline, including system font fallbacks. */
+.intro-content h1{font-family:"DM Sans",Arial,"Microsoft YaHei",sans-serif;font-variant-numeric:lining-nums;display:inline-block;max-width:100%;white-space:nowrap;word-break:keep-all;overflow-wrap:normal}
 .intro-content h1 .title-black,.intro-content h1 .title-red{display:inline;white-space:nowrap}
 body[data-theme=dark] .intro-content h1 .title-black{color:#f6f3ff}
 
@@ -354,6 +355,11 @@ body[data-theme=dark] .intro-content h1 .title-black{color:#f6f3ff}
 .social-bilibili .legacy-glyph{color:#00aeec}
 .social-mail .legacy-glyph{color:#20242d}
 .social-icon{text-decoration:none}
+
+.footer-sponsor{display:inline-grid!important;place-items:center;width:28px;height:28px;transition:transform .18s ease}
+.footer-sponsor:hover,.footer-sponsor:focus-visible{transform:translateY(-2px)}
+.footer-sponsor:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.site-footer .footer-sponsor .ui-icon{width:14px;height:14px}
 
 /* Only the card action opens its destination; clicking the card changes focus. */
 .nav-card{cursor:pointer}
